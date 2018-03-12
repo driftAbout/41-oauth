@@ -20,6 +20,7 @@ app.use(cors());
 app.use('/api/v1', router);
 require('../route/route-auth')(router);
 require('../route/route-gallery')(router);
+require('../route/route-oauth')(router);
 app.use('/*', (req, res) => errorHandler(new Error('Path Error: Requested path not found'), res));
 
 
