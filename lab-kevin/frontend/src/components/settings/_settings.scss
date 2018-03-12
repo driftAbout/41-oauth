@@ -1,0 +1,20 @@
+@import '../../style/vars';
+
+.settings-form-toggle {
+  span {
+    cursor: pointer;
+    margin-top: 1em;
+    margin-left: 1em;
+    display: inline-block;
+    color: $dark-color;
+  }
+
+  span + span::before {
+    content: "|";
+    margin-right: 1em;
+    color: #555;
+  }
+
+}
+
+

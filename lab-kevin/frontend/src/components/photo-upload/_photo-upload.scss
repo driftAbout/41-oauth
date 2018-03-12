@@ -1,0 +1,112 @@
+@import '../../style/vars';
+
+.photo-upload-form-container {
+  width: 80%;
+  margin: 3em auto;
+}
+
+.closed .photo-upload-wrap {
+  overflow: hidden;
+  opacity: 0;
+  transition: 500ms;
+}
+
+.photo-upload-wrap {
+  transition: 500ms;
+}
+
+.photo-upload-form {
+
+  input button{
+    outline: none;
+    border: 1px inset grey;
+    background-color: #FFF;
+  }
+
+  button[type="submit"]{
+    background-color: $footer-color;
+  }
+
+  input[type="text"]{
+    display: block;
+    padding: .5em 0;
+    width: 20em;
+    text-indent: .5em;
+    font-size: 1em;
+    margin: 0 auto;
+  }
+
+  input[type="text"]::-webkit-input-placeholder {
+    text-align: center;
+  }
+
+  input[type="text"]::-moz-input-placeholder {
+    text-align: center;
+  }
+
+  input[type="file"][name="photo"] {
+    display: none;
+  }
+
+  input[type="file"][name="photo"] + label {
+    cursor: pointer;
+    display:inline-block;
+    margin: 0 auto;
+    width: 100%;
+    margin-bottom: 1em;
+
+    &:active{
+      opacity: .9;
+    }
+  }
+
+  .photo-image {
+    margin: 0 auto;
+    height: 20em;
+    width: 20em;
+    object-fit: cover;
+    cursor: pointer;
+  }
+
+ .button-wrap {
+    width: 20em;
+    margin: 0 auto;
+    padding: 1em 0;
+    text-align: right;
+
+    span {
+      color: #666;
+      cursor: pointer;
+    }
+    
+    button {
+      outline: none;
+      padding: .5em 1em;
+      font-size: 1em;
+      margin-left: .5em;
+      border-radius: .2em;
+      cursor: pointer;
+    }
+  }
+
+}
+
+.photo-upload-wrap {
+  width: 20em;
+  height: 20em;
+  margin: 0 auto;
+  overflow:hidden;
+  border: 1px solid;
+  border-radius: .2em;
+  text-align: center;
+  background-color: #999;
+  line-height: 20em;
+  box-shadow: 0 0 15em 0.1em #555 inset;
+
+  span {
+    display: inline-block;
+    color: #fff;
+    font-size: 1.5em;
+  }
+
+}

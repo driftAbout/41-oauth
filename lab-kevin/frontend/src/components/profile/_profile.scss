@@ -1,0 +1,141 @@
+@import '../../style/vars';
+
+.profile-form-container {
+  width: 80%;
+  margin: 3em auto;
+}
+
+.closed .avatar-upload-wrap {
+  overflow: hidden;
+  opacity: 0;
+  transition: 500ms;
+}
+
+.avatar-upload-wrap {
+  transition: 500ms;
+}
+
+.user-settings-form, .user-profile-form{
+  input, textarea, button{
+    pointer-events: none;
+    outline: none;
+    border: 1px inset transparent;
+    background: transparent;
+  }
+
+  input[type="text"], input[type="email"]{
+    display: block;
+    padding: .5em 0;
+    width: 20em;
+    text-indent: .5em;
+    font-size: 1em;
+  }
+
+  textarea {
+    resize: none;
+    margin: 0 auto;
+    width: 20em;
+    display: block;
+    font-size: 1em;
+    height: 10em;
+    padding: 1em;
+    box-sizing: border-box;
+    margin-top: .5em;
+  }
+
+  textarea::-webkit-input-placeholder {
+    text-align: center;
+  }
+
+  textarea::-moz-input-placeholder {
+    text-align: center;
+  }
+
+  input[type="file"][name="avatar"] {
+    display: none;
+  }
+
+  input[type="file"][name="avatar"] + label {
+    cursor: pointer;
+  }
+
+  input[type="file"][name="avatar"] + label {
+    pointer-events: none;
+    display:inline-block;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+ .button-wrap {
+    width: 20em;
+    margin: 0 auto;
+    padding: 1em 0;
+    text-align: right;
+
+    span {
+      color: #666;
+      cursor: pointer;
+    }
+    
+    button {
+      padding: .5em 1em;
+      font-size: 1em;
+      margin-left: .5em;
+      border-radius: .2em;
+    }
+  }
+
+}
+
+.user-settings-form.edit, .user-profile-form.edit{
+  
+  input, textarea, button{
+    pointer-events: all;
+    outline: none;
+    border: 1px inset grey;
+    background-color: #FFF;
+  }
+
+  button[type="submit"]{
+    background-color: $footer-color;
+  }
+
+  input[type="file"][name="avatar"] + label { 
+      pointer-events: all;
+      cursor: pointer;
+      margin-bottom: 1em;
+      
+      &:active{
+        opacity: .9;
+      }
+  }
+}
+
+.avatar-upload-wrap {
+  width: 20em;
+  height: 20em;
+  margin: 0 auto;
+  overflow:hidden;
+  border: 1px solid;
+  border-radius: .2em;
+  text-align: center;
+  background-color: #999;
+  line-height: 20em;
+  box-shadow: 0 0 15em 0.1em #555 inset;
+
+  span {
+    display: inline-block;
+    color: #fff;
+    font-size: 1.5em;
+  }
+
+}
+
+.user-profile-form {
+  .avatar-image {
+    height: 20em;
+    width: 20em;
+    object-fit: cover;
+    cursor: pointer;
+  }
+}
