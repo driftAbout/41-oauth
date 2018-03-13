@@ -1,6 +1,6 @@
 ># Lab 41: Oauth
 
-Create a frontend that enables a user to signup or signin using Google OAuth.
+Create a frontend that enables a user to signup or signin using Google OAuth.  This a demo front end tied to a demo backend to showcase the usage of the google OAuth process.  Users are prompted to sign in or sign up using their google credentials.  New users are signed up and signed in while existing users are signed in.  A JSON web token id returned for additional requests.
 
 >## Install
 
@@ -74,6 +74,14 @@ Create a frontend that enables a user to signup or signin using Google OAuth.
   },
 ```
 
+### Environmental Variables
+
+The following env vars are needed:
+
+```BASH
+NODE_ENV=development
+API_URL=http://localhost:3000
+```
 
 ### Usuage:
 

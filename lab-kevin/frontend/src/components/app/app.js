@@ -20,7 +20,7 @@ export default class App extends React.Component{
 
   componentWillMount(){
     let state = store.getState();
-    if(!state.token && localStorage.token) store.dispatch(setStateFromStorage());
+    if(!state.token && (localStorage.token || document.cookie)) store.dispatch(setStateFromStorage());
   }
   
   render(){
