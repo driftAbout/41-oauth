@@ -1,7 +1,8 @@
 import React from 'react';
 import {connect} from 'react-redux';
 import {signInRequest, signUpRequest, createProfileRequest, getProfileRequest, getUserPhotosRequest} from '../../actions';
-import {SignForm} from '../sign';
+//import {SignForm} from '../sign';
+import {OauthSignForm} from '../oauth-sign';
 
 
 class Landing extends React.Component{
@@ -22,7 +23,7 @@ class Landing extends React.Component{
     return (
       <section className="landing-container">
         <h2>All the World&apos;s a Stage<span>--William Shakespeare</span></h2>
-        <SignForm sign={params.sign}
+        <OauthSignForm sign={params.sign}
           onComplete={onComplete}
         />
       </section>

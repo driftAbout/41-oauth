@@ -1,6 +1,6 @@
 ># Lab 17: Bearer Auth
 
- A basic express server with basic authorization middleware and get and post routes for basic for signup/signin functionality and a mongodb for persistance.  Bearer authentication is used in conjunction with a JSON web token for keeping users signed in for creating, reading, editing, and deleting galleries.
+ A basic express server with basic authorization middleware and get and post routes for basic for signup/signin functionality and a mongodb for persistance.  Bearer authentication is used in conjunction with a JSON web token for keeping users signed in for creating, reading, editing, and deleting galleries.  An optional OAuth google route is provided for sign in and sign up.  Users are returned a JSON web token for additional requests and new are added to the database.
 
   - POST -  /api/v1/singup  - Create a user account and save the username, email and a hashed password for hashed encryption comparison. 
 
@@ -59,6 +59,22 @@
     "stop-db": "killall mongod"
   }
 ```
+
+### Environmental Variables
+
+The following env vars are needed:
+
+```BASH
+PORT=3000
+MONGODB_URI=mongodb://localhost/oauth
+APP_SECRET=
+CLIENT_URL=http://localhost:8080
+GOOGLE_OAUTH_ID=
+GOOGLE_OAUTH_SECRET=
+API_URL=http://localhost:3000
+
+```
+
 
 #### Run the tests!
 

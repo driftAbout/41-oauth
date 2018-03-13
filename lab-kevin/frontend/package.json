@@ -1,8 +1,7 @@
 {
   "name": "lab-kevin",
   "version": "1.0.0",
-  "description": "Lab 38: Photo Uplaods - Create a frontend that follows react redux best practices with a landing page that enables a user to signup or signin. Redirect the user to the dashboard page on signup or signin and store the users token in a cookie or localstorage on signin.  Give the user the ability to upload an image to use as an avitar.",
-  "main": "webpack.config.js",
+  "description": "Lab 41: OAuth - Create a frontend that enables a user to signup or signin using Google OAuth",
   "scripts": {
     "lint": "eslint .",
     "build": "webpack",
